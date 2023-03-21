@@ -26,8 +26,8 @@ N_zp = M - mod( length( x ) , M / 2 );                                      % nu
 x = padarray( x , N_zp , 0 , 'post' );                                      % zero-pad the array to match an integer number of windows
 y = padarray( y , N_zp , 0 , 'post' );                                      % zero-pad the array to match an integer number of windows
 
-p_x = 20;                                                                   % defines the order of the LPC (number of filter taps) for speech signal
-p_y = 20;                                                                   % defines the order of the LPC (number of filter taps) for the musical signal
+p_x = 46;                                                                   % defines the order of the LPC (number of filter taps) for speech signal
+p_y = 46;                                                                   % defines the order of the LPC (number of filter taps) for the musical signal
 
 u = zeros( M , 1 );                                                         % creates an impulse signal to obtain filter impulse responses
 u( 1 ) = 1; 
